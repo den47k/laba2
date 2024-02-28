@@ -5,26 +5,18 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-<<<<<<< HEAD
-        
     	Scanner scaleScanner = new Scanner(System.in);
     	System.out.println("Enter amount of rows: ");
     	int rows = scaleScanner.nextInt();
     	System.out.println("Enter amount of columns: ");
     	int cols = scaleScanner.nextInt();
     	
-
-=======
-        int rows = 4; 
-        int cols = 3; 
->>>>>>> 1e931863ee666b61edc38124b4bca821233ecdea
         Random random = new Random();
 
         short[][] matrix = new short[rows][cols];
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                // Generate a random short value
                 short randomShort = (short) random.nextInt(Short.MAX_VALUE + 1);
                 matrix[i][j] = randomShort;
             }
