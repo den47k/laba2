@@ -5,8 +5,14 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        int rows = 4; // You can change the number of rows
-        int cols = 3; // You can change the number of columns
+        
+    	Scanner scaleScanner = new Scanner(System.in);
+    	System.out.println("Enter amount of rows: ");
+    	int rows = scaleScanner.nextInt();
+    	System.out.println("Enter amount of columns: ");
+    	int cols = scaleScanner.nextInt();
+    	
+
         Random random = new Random();
 
         short[][] matrix = new short[rows][cols];
@@ -19,18 +25,17 @@ public class Main {
             }
         }
         
-        System.out.println("Generated matrix:\n");
+        System.out.println("\nGenerated matrix:\n");
         
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                System.out.print(matrix[i][j] + " ");
+                System.out.print(matrix[i][j] + "\t");
 
             }
             System.out.println();
         }
         
         // transposing matrix
-        short temp;
         short[][] trans_matrix = new short[cols][rows]; 
         
         for (int i=0; i < rows; i++) {
@@ -43,7 +48,7 @@ public class Main {
         
         for (int i = 0; i < cols; i++) {
             for (int j = 0; j < rows; j++) {
-                System.out.print(trans_matrix[i][j] + " ");
+                System.out.print(trans_matrix[i][j] + "\t");
 
             }
             System.out.println();
@@ -74,8 +79,7 @@ public class Main {
         	}
         }
         
-        System.out.println(sumMax);
-        System.out.println(sumMIn);
-        
+        System.out.println("\nSum of the maximum elements of the even columns of the matrix: " + sumMax);
+        System.out.println("Sum of the minimum elements of the odd columns of the matrix: " + sumMIn);   
     }
 }
