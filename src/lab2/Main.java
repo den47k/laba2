@@ -5,6 +5,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         
     	Scanner scaleScanner = new Scanner(System.in);
     	System.out.println("Enter amount of rows: ");
@@ -13,6 +14,10 @@ public class Main {
     	int cols = scaleScanner.nextInt();
     	
 
+=======
+        int rows = 4; 
+        int cols = 3; 
+>>>>>>> 1e931863ee666b61edc38124b4bca821233ecdea
         Random random = new Random();
 
         short[][] matrix = new short[rows][cols];
