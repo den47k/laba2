@@ -5,8 +5,8 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        int rows = 4; // You can change the number of rows
-        int cols = 3; // You can change the number of columns
+        int rows = 4; 
+        int cols = 3; 
         Random random = new Random();
 
         short[][] matrix = new short[rows][cols];
